@@ -11,27 +11,27 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="pt-4 pb-2">Will You Have a Series of Unfortunate Events?</h1>
       <form id="questions">
+        <h1 class="pt-4 pb-2">Will You Have a Series of Unfortunate Events?</h1>
         <div class="row justify-content-start">
           <div class="col-12">
           <h4>Tell us about your parents <small class="text-muted"> check all that apply</small></h4>
           </div>
           <div class="col-12">
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" name="parents" id="parents1" value="20">
+              <input class="form-check-input" type="checkbox" name="parents" id="parents1" value="25">
               <label class="form-check-label iconTitle" for="parents1">Are your parents wealthy?</label>
             </div>
           </div>
           <div class="col-12">
             <div class="form-check form-check-inline">
               <input class="form-check-input" type="checkbox" name="parents" id="parents2" value="0">
-              <label class="form-check-label iconTitle" id="parents2">Are your parents still alive?</label>
+              <label class="form-check-label iconTitle" id="parents2">Your parents are still alive</label>
             </div>
           </div>
           <div class="col-12">
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" name="parents" id="parents3" value="10">
+              <input class="form-check-input" type="checkbox" name="parents" id="parents3" value="20">
               <label class="form-check-label iconTitle" id="parents3">Do you know where your parents do their banking?</label>
             </div>
           </div>
@@ -54,20 +54,20 @@
           </div>
           <div class="col-12">
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" name="siblings" value="50">
+              <input class="form-check-input" type="checkbox" name="siblings" value="10">
               <label class="form-check-label iconTitle">Are you the oldest?</label>
             </div>
           </div>
           <div class="col-12">
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" name="siblings" value="1">
-              <label class="form-check-label iconTitle">If you are very smart, can you speak yet?</label>
+              <input class="form-check-input" type="checkbox" name="siblings" value="90">
+              <label class="form-check-label iconTitle">You are very smart but can't speak yet</label>
             </div>
           </div>
           <div class="col-12">
             <div class="form-check form-check-inline">
               <input class="form-check-input" type="checkbox" name="siblings" value="10">
-              <label class="form-check-label iconTitle">Your siblings are very important to you</label>
+              <label class="form-check-label iconTitle">It's true that your siblings are very important to you</label>
             </div>
           </div>
         </div>
@@ -77,12 +77,21 @@
             </div>
         </div>
       </form>
-      <div class="answers">
-        <div id="parentsAnswers">
-
+      <div id="tellFortune">
+        <div class="row">
+          <div class="col-12">
+            <h1 id="fortuneHead" class="pt-4"></h1>
+          </div>
         </div>
-        <div id="siblingsAnswers">
-
+        <div class="row justify-content-center">
+          <div class="col-8 fortuneImage">
+            <img id="fortuneImage" src="" alt="">
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-4 mt-3 mb-3 pl-4">
+            <button type="button" class="btn btn-info ml-4" id="tryAgain">Try Again!</button>
+          </div>
         </div>
       </div>
     </div>

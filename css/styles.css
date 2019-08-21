@@ -3,7 +3,8 @@ body {
   height: 100vh;
   background-image: url("../img/fortuneTellerBackground.jpg");
   background-repeat: no-repeat;
-  background-position: bottom center;
+  background-size: cover;
+  background-position: bottom -150px center;
   background-color: rgba(83,75,76,1.0);
   color: rgba(5,10,0,1);
   font-size:1.25em;
@@ -16,4 +17,12 @@ h1 {
 }
 .text-muted {
   color: rgba(0,0,0,.75) !important;
+}
+
+.fortuneImage img {
+  width:100%;
+}
+
+#tellFortune {
+  display: none;
 }

@@ -20,10 +20,17 @@ var computeAnswerTotal = function(array1,array2) {
 
 }
 
+
+
 $(document).ready(function(){
 
   $("form#questions").submit(function(event){
     event.preventDefault();
+
+    $("div.tellFortune").empty();
+    parentsAnswers = [];
+    siblingsAnswers = [];
+    userTotal=0;
 
 
     $("input:checkbox[name=parents]:checked").each(function(){
@@ -34,12 +41,32 @@ $(document).ready(function(){
     });
 
     computeAnswerTotal(parentsAnswers,siblingsAnswers);
-    
+
     console.log(userTotal);
 
+    if (userTotal >= 90) {
+      $("h1#fortuneHead").text("You are definitely going to have a series of unfortunate events!");
+      $("img#fortuneImage").removeAttr("src alt").attr({"src": "img/octpus.jpg", "alt": "scary"});
+    } else if (userTotal >= 50) {
+      $("h1#fortuneHead").text("You may have a few unfortnate events, don't go swimming on a full stomach!");
+      $("img#fortuneImage").removeAttr("src alt").attr({"src": "img/lakeLach.png", "alt": "lake lach with leeches"});
+    } else if (userTotal >= 20) {
+      $("h1#fortuneHead").text("Make sure you know where your parents are at all times!");
+      $("img#fortuneImage").removeAttr("src alt").attr({"src": "img/killing.jpeg", "alt": "olaf with knives"});
+    } else {
+      $("h1#fortuneHead").text("Whew! You're in the clear. Life looks great for you!");
+      $("img#fortuneImage").removeAttr("src alt").attr({"src": "img/whew.jpeg", "alt": "pretty in pink"});
+    }
+
+    $("form#questions").hide();
+    $("div#tellFortune").show();
 
   });
+  $("button#tryAgain").click(function(){
+    $("form#questions").show();
+    $("div#tellFortune").hide();
 
+  });
 });
 
 // var parents1 = parseInt($('input#parents1:checked').val());
