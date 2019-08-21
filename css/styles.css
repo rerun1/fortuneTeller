@@ -1,0 +1,19 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../img/fortuneTellerBackground.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-color: rgba(83,75,76,1.0);
+  color: rgba(5,10,0,1);
+  font-size:1.25em;
+}
+h1 {
+  text-align: center;
+}
+.container {
+  background-color: rgba(180,75,60,.9);
+}
+.text-muted {
+  color: rgba(0,0,0,.75) !important;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/jquery-3.4.1.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/scripts.js" type="text/javascript" charset="utf-8"></script>
+    <title>Will You Have a Series of Unfortunate Events?</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="pt-4 pb-2">Will You Have a Series of Unfortunate Events?</h1>
+      <form id="questions">
+        <div class="row justify-content-start">
+          <div class="col-12">
+          <h4>Tell us about your parents <small class="text-muted"> check all that apply</small></h4>
+          </div>
+          <div class="col-12">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="parents" id="parents1" value="20">
+              <label class="form-check-label iconTitle" for="parents1">Are your parents wealthy?</label>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="parents" id="parents2" value="0">
+              <label class="form-check-label iconTitle" id="parents2">Are your parents still alive?</label>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="parents" id="parents3" value="10">
+              <label class="form-check-label iconTitle" id="parents3">Do you know where your parents do their banking?</label>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="parents" id="parents4" value="10">
+              <label class="form-check-label iconTitle" id="parents3">If your parents have died, do you know how?</label>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-start">
+          <div class="col-12">
+          <h4 class="mt-4">Tell us about your siblings <small class="text-muted"> check all that apply</small></h4>
+          </div>
+          <div class="col-12">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="siblings" value="0">
+              <label class="form-check-label iconTitle">Are there more than 8 children in your family?</label>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="siblings" value="50">
+              <label class="form-check-label iconTitle">Are you the oldest?</label>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="siblings" value="1">
+              <label class="form-check-label iconTitle">If you are very smart, can you speak yet?</label>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="siblings" value="10">
+              <label class="form-check-label iconTitle">Your siblings are very important to you</label>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-6 mt-3 mb-3">
+              <button type="submit" class="btn btn-info">Is your future going to be unfortunate?</button>
+            </div>
+        </div>
+      </form>
+      <div class="answers">
+        <div id="parentsAnswers">
+
+        </div>
+        <div id="siblingsAnswers">
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
